@@ -12,6 +12,7 @@ RUN apt-get update
 #
 # install dependencies
 RUN apt-get install -y ruby2.1-dev build-essential nodejs libpq-dev
+RUN apt-get install -y libcurl4-openssl-dev
 
 # install bundler
 RUN gem install bundler --no-ri --no-rdoc
